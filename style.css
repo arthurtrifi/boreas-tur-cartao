@@ -1,0 +1,211 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f0f8ff, #739bbd); /* degrade laranja */
+}
+
+.container {
+    background: 
+        linear-gradient(to bottom, rgba(124, 198, 190, 0.85), rgba(51, 104, 180, 0.85)),
+        url('photo.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #add8e6; /* azul claro */
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 620px;
+    height: 500px;
+}
+.titulo {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 40%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.buttons a{
+    text-decoration: none;
+}
+/* Botão padrão */
+.btn button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: white;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 12px;
+}
+
+/* Efeito hover geral */
+.btn button:hover {
+    transform: scale(1.02);
+    background-color: #ffc863; /* laranja claro */
+}
+
+/* Ícones dentro dos botões */
+.btn button img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Botões com largura total igual */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Estilo especial para o botão WhatsApp */
+.botam3 button:hover {
+    background-color: #25D366; /* verde oficial do WhatsApp */
+    color: white;
+}
+.botam2 button:hover{
+    background-color: #66c0dee2;
+    color: white;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 25px 16px;
+    border-radius: 0; /* Remove bordas arredondadas para ocupar toda a tela */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 150px;
+    margin-bottom: 16px;
+  }
+
+  .titulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .subtitulo {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .buttons {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .btn button {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
+  .btn button img {
+    width: 28px;
+    height: 28px;
+  }
+
+
+}
+
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+      .container { width: 100vw;
+    height: 100vh;
+    padding: 25px 16px;
+    border-radius: 0; /* Remove bordas arredondadas para ocupar toda a tela */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    width: 150px;
+    margin-bottom: 5px;
+  }
+
+  .titulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .subtitulo {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .buttons {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .btn button {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
+  .btn button img {
+    width: 28px;
+    height: 28px;
+  }
+
+}
