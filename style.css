@@ -57,7 +57,7 @@ body {
 .btn button {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     padding: 14px 20px;
     border: none;
